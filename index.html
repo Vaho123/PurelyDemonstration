@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration website </title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+
+<body>
+  
+  <canvas class="main" id="floatingbubbles" width="200" height="200"> </canvas>
+  
+  <span  style="font-size:20px;cursor:pointer; float:right; color:white" onclick="openNav()">&#9776;Open</span>  
+
+  <div class="main-Banner" z-index = 0 id="main-Banner"  onmouseenter="enterBanner()"  onmouseleave="exitBanner()">
+  
+    <button class = imgBanButton-next id="imgBanButton-next"   onclick="nextImage()"></button>
+    <button class = imgBanButton id="imgBanButton-prev" onclick="prevImage()"></button>
+    <div class ="fixedText" id ="fixedText">
+    
+      <strong><center>Click a circle to find out more</center></strong>
+     </div>
+ 
+    <div class="imgBanClass" id="imgBanner1" onclick="location.href = 'puzzling.html';">
+       <div class="imgban-box">
+         <h1>Puzzling</h1>
+       </div>
+     </div>
+ 
+     <div class="imgBanClass" id="imgBanner2" style="background-color:yellow; padding-left:5%;" onclick="location.href = 'AIVideos.html';">
+      <h1 style="margin-left:5%; margin-top: -10%">Courses </h1>
+      <br><br>
+       <div class="imgban-box" style="padding-left:5%;" >
+         <h3 style="text-align: center;">Choose which of the courses I have created you would like to take </h3>
+       </div>
+     </div>
+     
+   
+     <div class="imgBanClass" id="imgBanner3" onclick="location.href = 'intoBlue.html';">
+        <div class="imgban-box">
+         
+        <h2>Into the Blue</h2>
+        <br><p></p><p></p>
+       </div>
+      <div class="imgBanClass" id="imgBanner4" onclick="clicked4()">
+        <div class="imgban-box">
+         <p></p>
+       </div>
+       
+     <div class="imgBanClass" id="imgBanner5" onclick="clicked5()">
+        <div class="imgban-box">
+         <p></p>
+       </div>
+     </div> <!-- 3,2,1 to ensure the one to be seen first is loaded last -->
+     
+   </div> 
+    
+ </div>
+     
+ </div>
+   
+
+
+<br><br><br>
+<a href="AIVideos.html">
+  <img class = "round" src="teaching.png" alt="AI Training videos" width=12% height=auto style="padding-left:4%  ">    
+</a>
+  <a href="magic.html">
+     <img class = "round" src="Magic.png" alt="Magic hat and wand ascending" width=12% height=auto style="padding-left:1%"  onclick="MagicTrick()">  
+  </a>
+<a href="writing.html">
+<img class = "round" src="Writing.png" alt="Book covers" width=12% height=auto style="padding-left:1%" onclick="myWriting()">    
+</a>
+<a href="logic.html">
+<img class = "round" src="LogicPuzzle.png" alt="Images from Site Samples" width=13% height=auto style="padding-left:1%" onclick="myCourses()">  
+</a>
+<a href="myWord.html">
+    <img class = "round" src="WordGame2.png" alt="Letters on tiles" width=12% height=auto style="padding-left:1%" onclick="myWordle()">    
+</a>
+<a href="drumkit.html">
+  <img class = "round" src="drumkit_icon.png" alt="drumkit" width=12% height=auto style="padding-left:1%  ">    
+</a>
+<a href="mindful.html">
+  <img class = "round" src="Mindfullness2.png" alt="Mindfullness symbol" width=12% height=auto style="padding-left:1%"  onclick="mindfullness()">  
+  </a>
+
+
+<br><br><br>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+  <div class="overlay-content">
+    <div  id ="Home2"><a href="index.html">Home</a></div>
+
+  </div>
+    
+</div> 
+
+
+<script src='script.js'></script>
+
+</body>
+</html>
