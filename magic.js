@@ -103,7 +103,7 @@ var delayInMilliseconds = 2000; //2 second.
 var delayInMilliseconds3 = 3000; //3 second. 
 
 function delay() {
-  document.getElementById("delay1").innerText = "Think of your number...";
+  document.getElementById("delay1").innerText = "Think of your age...";
   setTimeout(function() {
   
    delay2();
@@ -121,7 +121,7 @@ function delay2() {
 
 function delay3() {
   setTimeout(function() {
-  document.getElementById("delay1").innerText = "Your number is:";
+  document.getElementById("delay1").innerText = "Your age is:";
    getAnswer();
 }, delayInMilliseconds);
 }
