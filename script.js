@@ -206,7 +206,7 @@ generateBubbles() {
   }
 
   bubbleDensity() {
-    return Math.sqrt((this.canvas.height, this.canvas.width) * 1.5); /* orig 7 */
+    return Math.sqrt((this.canvas.height, this.canvas.width) * 1.4); /* orig 7 */
   }
 }
 
